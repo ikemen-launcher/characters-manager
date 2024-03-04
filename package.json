@@ -1,0 +1,27 @@
+{
+  "name": "characters-manager",
+  "version": "1.0.0",
+  "description": "Manage Mugen/Ikemen characters",
+  "main": "main.mjs",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikemen-launcher/characters-manager.git"
+  },
+  "keywords": [
+    "mugen",
+    "ikemen",
+    "characters"
+  ],
+  "author": "neolao <contact@neolao.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ikemen-launcher/characters-manager/issues"
+  },
+  "homepage": "https://github.com/ikemen-launcher/characters-manager#readme",
+  "devDependencies": {
+    "electron": "^29.1.0"
+  }
+}
