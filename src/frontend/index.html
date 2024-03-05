@@ -5,7 +5,7 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'nonce-importmap' 'nonce-app' 'unsafe-eval'"
+      content="default-src 'self'; script-src 'self' 'nonce-importmap' 'unsafe-eval'"
     />
     <script type="importmap" nonce="importmap">
       {
@@ -13,8 +13,9 @@
           "vue": "./lib/vue.3.4.21.esm-browser.prod.js"
         }
       }
-    </script>
-    <title>Hello World!</title>
+      </script>
+    <script type="module" src="./index.js"></script>
+    <title>Ikemen Characters Manager</title>
   </head>
   <body>
     <h1>Hello World!</h1>
@@ -23,19 +24,7 @@
     <span id="electron-version"></span>.
 
     
-    <div id="app">{{ message }}</div>
+    <div id="app"></div>
     
-    <script type="module" nonce="app">
-      import { createApp, ref } from 'vue'
-    
-      createApp({
-        setup() {
-          const message = ref('Hello Vue!')
-          return {
-            message
-          }
-        }
-      }).mount('#app')
-    </script>
   </body>
 </html>

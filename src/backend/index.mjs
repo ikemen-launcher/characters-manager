@@ -10,11 +10,11 @@ const createWindow = () => {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: join(__dirname, "preload.mjs"),
+      preload: join(__dirname, "../preload/index.mjs"),
     },
   });
 
-  win.loadFile("index.html");
+  win.loadFile("src/frontend/index.html");
 };
 
 app.on("window-all-closed", () => {
